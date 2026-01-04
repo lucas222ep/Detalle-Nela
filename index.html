@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Un pequeño detalle</title>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Contenedor principal -->
+  <div id="app">
+
+    <!-- Fondo decorativo (corazones) -->
+    <div id="hearts-container"></div>
+
+    <!-- Contenido de cada pantalla -->
+    <div id="screen" class="fade-in">
+
+      <!-- Imagen -->
+      <img id="screen-image" src="" alt="imagen del detalle">
+
+      <!-- Texto -->
+      <div id="text-container">
+        <p id="screen-text">Frase</p>
+        <p id="extra-text" class="hidden">Gracias por leer</p>
+      </div>
+
+      <!-- Botón -->
+      <button id="next-btn">Siguiente</button>
+
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="ScreenManager.js"></script>
+  <script src="main.js"></script>
+
+  <audio id = "bg-audio" src="audio/musica.mp3" loop></audio>
+
+  <button id="audio-btn" class="audio-btn">
+    🎵 Msica
+  </button>
+
+</body>
+</html>
